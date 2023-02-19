@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url('slike/addnew.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 9px;
+  }
+
+button {
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  background-color: rgba(138, 99, 67, 0.879);
+  border: 3px solid rgb(65, 29, 10);
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: cursive;
+  color: #000;
+  box-shadow: 2px 2px 20px rgb(65, 29, 10);
+  cursor: pointer;
+  opacity: 1;
+  }
+
+input {
+  padding: 17px;
+  width: 400px;
+  font-size: 20px;
+  text-align: center;
+  border: 3px solid rgb(65, 29, 10);
+  border-radius: 10px;
+  background-color: rgba(138, 99, 67, 0.879);
+  box-shadow: 2px 2px 20px rgb(65, 29, 10);
+  opacity: 1;
+  color: #000;
+  }
+
+::placeholder {
+  color: #000;
+  font-size: 19px;
+  font-family: cursive;
+  }
+
+/* široki ekrani */
+@media (min-width: 992px) and (max-width: 1300px) {
+  body {
+    background-size: cover;
+  }
+
+  input {
+    width: 400px;
+  }
+  button {
+    width: 200px;
+  }
+}
+
+/* tableti */
+@media (min-width: 641px) and (max-width: 992px) {
+  body {
+    background-size: cover;
+  }
+
+  input {
+    width: 90%;
+    margin: 10px;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+/* mobilni uređaji */
+@media (max-width: 640px) {
+  body {
+    background-size: cover;
+  }
+
+  input {
+    width: 80%;
+    margin: 10px;
+  }
+  button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
