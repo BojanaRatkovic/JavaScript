@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('slike/end3.jpg');
+    background-size: cover;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.wrapper {
+    width: 90%;
+    height: 80vh;
+    border: 2px solid #337248c5;
+    background-color: rgba(47, 194, 130, 0.949);
+    opacity: 0.7;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+.naslov {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    color: #123e2aa8;
+}
+.ques {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+p {
+    border-bottom: 2px solid #1a6342a8;
+    padding: 12px;
+    width: 90%;
+    font-weight: bold;
+    font-family: cursive;
+}
